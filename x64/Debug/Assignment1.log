@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\Owner\source\repos\key-wii\Assignment1\main.cpp(17,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Assignment1.vcxproj -> C:\Users\Owner\Source\Repos\key-wii\Assignment1\x64\Debug\Assignment1.exe
