@@ -10,9 +10,9 @@
 //#include "DescriptiveStatistics.h"
 using namespace std;
 
-void PP1();
-void PP2();
-void PP3();
+void asciiConvert();
+void baseConvert();
+void descStats();
 
 void main() {
     while (true) {
@@ -31,9 +31,9 @@ void main() {
         
             cout << "\n";
             switch (option) {
-                case 1: PP1(); break;
-                //case 2: PP2; break;
-                //case 3: PP3; break;
+                case 1: asciiConvert(); break;
+                //case 2: baseConvert(); break;
+                //case 3: descStats(); break;
                 default: exit(0);
             }
             cout << "\n";
@@ -43,7 +43,7 @@ void main() {
     }
 }
 
-void PP1() {
+void asciiConvert() {
     using namespace ascii;
     AsciiTextToAsciiNumbers Class;
 

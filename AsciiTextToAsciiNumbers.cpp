@@ -22,7 +22,7 @@ namespace ascii {
 
 	void AsciiTextToAsciiNumbers::convert() {
 		if (text.empty()) {
-			cout << "\t\tERROR: empty input text.";
+			cout << "\t\tERROR: empty input text.\n";
 			return;
 		}
 		textVals.clear();
@@ -38,7 +38,7 @@ namespace ascii {
 	}
 
 	void AsciiTextToAsciiNumbers::saveToBin() {
-		if (text.empty()) {
+		if (textVals.empty()) {
 			cout << "\t\tERROR: empty binary text.\n";
 			return;
 		}
@@ -51,8 +51,8 @@ namespace ascii {
 	}
 
 	void AsciiTextToAsciiNumbers::readBin() {
-		if (text.empty()) {
-			cout << "\t\tERROR: unable to buffer the size of string to store.\n";
+		if (textVals.empty()) {
+			cout << "\t\tERROR: unable to buffer the size of vector<int> to store.\n";
 			return;
 		}
 		string val;
@@ -64,6 +64,6 @@ namespace ascii {
 				cout << val << " ";
 			bin.close();
 			cout << "\n";
-		} else cout << "ERROR: unable to open file.";
+		} else cout << "\t\tERROR: unable to open file.\n";
 	}
 }
